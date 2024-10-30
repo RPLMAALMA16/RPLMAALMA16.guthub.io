@@ -1,0 +1,326 @@
+                                                                                                                                                          
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Ma'arif Udanawu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- Link CSS lainnya -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+    <div class="header-content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Selamat Datang di Ma Ma'arif Udanawu</h1>
+        <h2 class="h2-head">Pendidikan Berkualitas untuk Masa Depan Cerah</h2>
+        <p class="madrasah-description">
+            Ma Ma'arif Udanawu adalah lembaga pendidikan yang berkomitmen memberikan pendidikan berbasis nilai keislaman dan akhlakul karimah. Kami mempersiapkan generasi masa depan yang cerdas, beriman, dan berkompetensi tinggi untuk menghadapi dunia yang terus berkembang.
+        </p>
+        <a href="#pendaftaran" class="cta-button">Daftar Sekarang</a>
+        <div class="nav-toggle" id="nav-toggle">
+            &#9776; <!-- Simbol hamburger -->
+        </div>
+        
+    </div>
+    </header>
+
+
+    <section id="tentang-sekolah">
+        <h3>Tentang Ma Ma'arif Udanawu</h3>
+        <div class="content-container">
+            <video class="profile-video" controls>
+                <source src="eneh.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video tag.
+            </video>
+            <div class="text-content">
+                <p>Ma Ma'arif Udanawu telah berdiri sejak tahun 1990 dan berkomitmen untuk memberikan pendidikan terbaik dengan pendekatan karakter yang kuat. Kami memiliki visi untuk menciptakan generasi yang berakhlak mulia, cerdas, dan berdaya saing tinggi. Dengan fasilitas lengkap dan kurikulum yang terintegrasi, kami percaya bahwa setiap siswa memiliki potensi untuk sukses di masa depan.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="program-pendidikan" id="program-pendidikan"> 
+        <h3>Program Pendidikan</h3>
+        <div class="card-slider">
+            <div class="card">
+                <i class="fas fa-user-graduate card-icon"></i>
+                <h4>Pendidikan Menengah</h4>
+                <p>Program untuk siswa usia 13-18 tahun dengan fokus pada persiapan ujian nasional.</p>
+                
+            </div>
+            <div class="card">
+                <i class="fas fa-futbol card-icon"></i>
+                <h4>Kegiatan Ekstrakurikuler</h4>
+                <p>Kegiatan di luar jam pelajaran untuk pengembangan bakat dan minat siswa.</p>
+
+            </div>
+            <div class="card">
+                <i class="fas fa-users card-icon"></i>
+                <h4>Pengembangan Karakter</h4>
+                <p>Program yang bertujuan membentuk karakter dan kepribadian siswa.</p>
+                
+            </div>
+            <div class="card">
+                <i class="fas fa-users card-icon"></i>
+                <h4>Program Keterampilan</h4>
+                <p>Program yang bertujuan meningkatkan skill siswa dalam dunia kerja.</p>
+            </div>
+        </div>
+        <div id="banner" class="banner" style="display: none;">
+            <button id="close-banner" onclick="closeBanner()">X</button>
+            <img src="" alt="Banner" id="banner-image">
+        </div>
+    </section>
+    
+    
+
+    <section id="fasilitas">
+        <h3>Fasilitas</h3>
+        <div class="fasilitas-container">
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Laboratorium</h4>
+                <p>Laboratorium modern untuk mendukung pembelajaran sains.</p>
+                <img src="laboratorium.jpeg" alt="Laboratorium" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Perpustakaan</h4>
+                <p>Perpustakaan dengan koleksi buku yang lengkap dan nyaman.</p>
+                <img src="perpus.jpg" alt="Perpustakaan" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Ruang Kelas</h4>
+                <p>Ruang kelas yang nyaman.</p>
+                <img src="ruang.jpg" alt="Ruang Kelas" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Lab Keterampilan</h4>
+                <p>Ruang untuk belajar keterampilan praktis.</p>
+                <img src="lab.jpg" alt="Lab Keterampilan" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>GOR</h4>
+                <p>Gedung Olahraga untuk kegiatan ekstrakurikuler.</p>
+                <img src="gor.jpg" alt="GOR" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Kamar Mandi</h4>
+                <p>Kamar mandi bersih dan nyaman.</p>
+                <img src="kamarmandi.jpg" alt="Kamar Mandi" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Kantin Siswa</h4>
+                <p>Kantin dengan makanan sehat dan terjangkau.</p>
+                <br>
+                <img src="kantin.jpg.jpg" alt="Kantin" class="fasilitas-image" style="display:none;">
+            </div>
+            <div class="fasilitas-item" onclick="toggleImage(this)">
+                <h4>Lapangan Olahraga</h4>
+                <p>Lapangan untuk kegiatan olahraga.</p>
+                <img src="lap.jpg" alt="Lapangan Olahraga" class="fasilitas-image" style="display:none; height: 30%;">
+            </div>
+        </div>
+    </section>
+   <div class="table">
+        <h1>Daftar Prestasi MA Ma'arif Udanawu</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Prestasi</th>
+                    <th>Tahun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juara I Lomba Debat Nasional</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Juara II Olimpiade Sains</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Best School di Kompetisi Bahasa Inggris</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Juara Harapan Lomba Pidato</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Penghargaan Sekolah Ramah Lingkungan</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <section id="alumni-sukses">
+        <h3>Alumni Sukses</h3>
+        <div class="alumni-list" class="card">
+            <div class="alumni-item">
+                <img src="5.jpg" alt="Ahmad Rizqi" class="alumni-photo" >
+                <h4>Ahmad Rizqi</h4>
+                <p>Menjadi Software Engineer di sebuah perusahaan teknologi terkemuka setelah lulus dari Universitas Gadjah Mada.</p>
+            </div>
+            <div class="alumni-item" class="card">
+                <img src="1.jpg" alt="Indah Sari" class="alumni-photo">
+                <h4>Indah Sari</h4>
+                <p>Mendapatkan beasiswa S2 di University of Melbourne dan saat ini sedang menyelesaikan studinya di bidang Pendidikan.</p>
+            </div>
+            <div class="alumni-item" class="card">
+                <img src="2.jpg" alt="Rina Amelia" class="alumni-photo">
+                <h4>Rina Amelia</h4>
+                <p>Berhasil mendirikan perusahaan startup di bidang e-commerce dan menjadi salah satu pemimpin pasar lokal.</p>
+            </div>
+            <div class="alumni-item" class="card">
+                <img src="3.jpg" alt="" class="alumni-photo">
+                <h4>Budi Santoso</h4>
+                <p>Menjadi Dosen di Universitas Negeri Surabaya setelah menyelesaikan S2 di bidang Ilmu Komputer.</p>
+            </div>
+            <div class="alumni-item">
+                <img src="4.jpg" alt="" class="alumni-photo" class="card">
+                <h4>Giring Rahmadi</h4>
+                <p>Berkarir sebagai Marketing Manager di perusahaan multinasional setelah lulus dari Fakultas Ekonomi Universitas Indonesia.</p>
+            </div>
+        </div>
+        <!-- Bagian Testimoni -->
+        <div class="testimonials">
+            <h4>Apa Kata Mereka?</h4>
+            <p>"Program pendidikan di sini sangat membantu anak-anak dalam belajar!" - <strong>Orang Tua</strong></p>
+            <p>"Saya merasa lebih siap untuk ujian berkat program menengah ini." - <strong>Siswa</strong></p>
+        </div>
+        
+        <a href="#pendaftaran" class="cta-button">Daftar Sekarang</a>
+    </section>
+    
+    <section id="pendaftaran">
+        <h3>Pendaftaran</h3>
+        <p>Ingin bergabung dengan kami? Isi formulir di bawah ini untuk mendaftar.</p>
+        
+        <h4>Biaya Pendaftaran</h4>
+        <p>Biaya pendaftaran untuk tahun ajaran ini adalah <strong>Rp 1.500.000</strong>.</p>
+        
+        <h4>Cara Seleksi</h4>
+        <p>Proses seleksi terdiri dari:</p>
+        <ul>
+            <li>Wawancara dengan calon siswa dan orang tua.</li>
+            <li>Ujian masuk (jika diperlukan).</li>
+            <li>Pemberitahuan hasil seleksi melalui email.</li>
+        </ul>
+        
+        <form>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Nomor Telepon" required>
+            <button type="submit" class="cta-button">Kirim</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Neon Hive. Semua Hak Dilindungi karya Neon Hive.</p>
+        <div class="social-media">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fmaalmablitar%2F&psig=AOvVaw1fNMisZlDuoIQ0tTw99AAP&ust=1730389994144000&source=images&cd=vfe&opi=89978449&ved=0CBgQ3YkBahcKEwiI86Gau7aJAxUAAAAAHQAAAAAQBA">Facebook</a>
+            <a href="https://www.instagram.com/maalmablitar/?hl=id">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        
+
+    nextBtn.addEventListener('click', function() {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+
+       
+    // Existing navigation and smooth scroll functionality...
+    const navToggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("nav");
+
+    // Toggling menu saat tombol hamburger diklik
+    navToggle.addEventListener("click", function() {
+        nav.classList.toggle("active");
+        if (nav.classList.contains("active")) {
+            nav.style.display = "flex"; // Tampilkan menu
+        } else {
+            nav.style.display = "none"; // Sembunyikan menu
+        }
+    });
+
+    // Smooth scroll ke bagian yang dituju
+    const scrollLinks = document.querySelectorAll("nav a");
+    scrollLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        });
+    });
+    // banner script pendidikan
+    let currentBanner = null; // Menyimpan banner yang sedang ditampilkan
+
+    function showBanner(imageSrc) {
+        const banner = document.getElementById('banner');
+        const bannerImage = document.getElementById('banner-image');
+
+        // Cek apakah banner yang sama sudah ditampilkan
+        if (currentBanner === imageSrc) {
+            // Jika sama, sembunyikan banner
+            closeBanner();
+        } else {
+            // Jika berbeda, tampilkan gambar baru
+            bannerImage.src = imageSrc; // Set the image source
+            banner.style.display = 'block'; // Show the banner
+            currentBanner = imageSrc; // Update currentBanner
+        }
+    }
+
+    function closeBanner() {
+        const banner = document.getElementById('banner');
+        banner.style.display = 'none'; // Sembunyikan banner
+        currentBanner = null; // Reset currentBanner
+    }
+    function toggleImage(item) {
+    const image = item.querySelector('.fasilitas-image');
+    if (image.style.display === 'none') {
+        image.style.display = 'block';
+    } else {
+        image.style.display = 'none';
+    }
+}
+
+    </script>
+
+</body>
+</html>
